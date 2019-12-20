@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paint</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="./paint.js"></script>
+  </head>
+
+  <body>
+    <div id="tools">
+      <button onclick="changeColor('#ff0000')">Red</button>
+      <button onclick="changeColor('#000000')">Black</button>
+      <button onclick="changeColor('#00ff00')">Green</button>
+    </div>
+    <canvas id="board"></canvas>
+  </body>
+
+  <script>
+    function changeColor(color) {
+      p.color = color;
+    }
+  </script>
+</html>

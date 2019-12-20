@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paint</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/src/style.css" />
+    <script type="text/javascript" src="/src/paint.js"></script>
+  </head>
+
+  <body>
+    <div id="tools">
+      <button onclick="changeTool('pen')">Pen</button>
+      <button onclick="changeTool('line')">Line</button>L
+      <button onclick="changeColor('#ff0000')">Red</button>
+      <button onclick="changeColor('#000000')">Black</button>
+      <button onclick="changeColor('#00ff00')">Green</button>
+
+      <button onclick="changeLineWidth(1)">1</button>
+      <button onclick="changeLineWidth(2)">2</button>
+      <button onclick="changeLineWidth(3)">3</button>
+      <button onclick="changeLineWidth(4)">4</button>
+    </div>
+    <canvas id="board"></canvas>
+  </body>
+
+  <script>
+    function changeLineWidth(width) {
+      p.lineWidth = width;
+    }
+    function changeColor(color) {
+      p.color = color;
+    }
+    function changeTool(tool) {
+      p.tool = tool;
+    }
+  </script>
+</html>
